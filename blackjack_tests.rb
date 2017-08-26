@@ -29,12 +29,6 @@ class CardTests < Minitest::Test
     assert Card.new(value: '5', suit: Deck::CARD_SUITS.sample).points == 5
     assert Card.new(value: '2', suit: Deck::CARD_SUITS.sample).points == 2
   end
-
-  def test_trying_to_get_the_points_value_for_an_ace_should_cause_error
-    #ace = Card.new(value: 'A', suit: Deck::CARD_SUITS.sample) 
-    #assert_raises ace.points 
-    skip
-  end
 end
 
 class DeckTests < Minitest::Test
